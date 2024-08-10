@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head><title>Working with animation</title>
+</head>
+<style>
+body{background:LightSeaGreen;}
+
+#homemenu
+{
+text-align:center;
+padding:1px;
+background:	Aquamarine;
+}
+
+#homemenu ol
+{
+list-style:none;
+margin-left:0px;
+}
+
+#homemenu ol li
+{
+text-align:left;
+margin-left:-35px;
+padding:0px;
+padding:10px;
+border-bottom:3px black inset;
+}
+#homemenu li:hover
+{
+background:green;
+padding:10px;
+}
+#homemenu ol li a{text-decoration:none;}
+
+#home{text-align:center; postion:relative; top:0px; left:10px ;color:white;width:100px ;height:20px;box-shadow:10px 10px 10px black;background:DarkSlateBlue;cursor:pointer;float:left;overflow:hidden;}
+
+#product{text-align:center;postion:relative;top:0px;left:10px; color:white;width:100px; height:20px;box-shadow:10px 10px 10px black;background:DarkSlateBlue;cursor:pointer;float:left;}
+
+
+#services{text-align:center;postion:relative;top:0px;left:10px; color:white;width:100px ;height:20px;box-shadow:10px 10px 10px black;background:DarkSlateBlue;cursor:pointer;float:left;}
+
+
+#about{text-align:center;postion:relative;top:0px;left:10px ;color:white;width:100px ;height:20px;box-shadow:10px 10px 10px black;background:DarkSlateBlue;cursor:pointer;float:left;}
+
+
+#home:hover{transition:0.50s;overflow:visible;}
+#product:hover{transition:0.50s;height:400px;}
+#services:hover{transition:0.50s;height:400px;}
+#about:hover{transition:0.50s;height:400px;}
+
+
+</style>
+<body>
+
+
+<div id="home">home
+<div id="homemenu">
+<ol>
+<li><a href=""> yahoo.com</a></li>
+<li><a href=""> yahoo.com</a></li>
+<li><a href=""> yahoo.com</a></li>
+<li><a href=""> yahoo.com</a></li>
+<li><a href=""> yahoo.com</a></li>
+<li><a href=""> yahoo.com</a></li>
+</ol>
+</div>
+</div>
+
+<div id="product">product</div>
+<div id="services">services</div>
+<div id="about">about</div>
+
+</body>
+</html>

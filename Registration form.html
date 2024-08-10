@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head> <title> Registration Form </title>
+<a name="top">
+<a href="practice work.html"><img src="images/back.jpg" width="2%" height="3%" align=left></a>
+<h1 style="color:Lavender; text-align:center";><font face="verdana"><u>Registration Form</u></font></h1>
+</head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+html{opacity:1;
+animation: show 1s linear;}
+
+
+body
+{
+ background-image: url("images/bg.jpg");
+ 
+
+background-size:cover;
+}
+
+#mainform
+{
+width:60%;
+height:auto;
+margin:auto;
+background:SteelBlue;
+padding-top:10px;
+font-size:18px;
+font-weight:bold;
+border-radius:5px;
+border-width: 3px;
+border-style: solid;
+border-image: linear-gradient(to right, cyan, pink) 1;
+
+}
+
+table{margin:auto;}
+
+input[type=text],input[type=number],input[type=email]
+{
+width:90%;
+height:30px;
+border-radius:5px;
+color:grey;
+
+}
+
+input:focus
+{
+border:3px blue;
+}
+
+
+input:required:invalid{
+border-color:red;
+}
+
+input:required:valid{
+border-color:green;
+background:#b3ffb3;
+}
+   
+
+</style>
+
+<body>
+<div id="mainform"> 
+<form action="" method="post">
+
+<table border="0" cellpadding="10" cellspacing="10">
+
+<tr>
+<td><label>Name  </label> </td>
+<td><input type="text" name="user" pattern="\w{3,15}" required placeholder="First Name" title="First" > </td>
+<td><input type="text" name="user" pattern="\w{3,15}" required placeholder="Last Name" title="Last"> </td>
+</tr>
+
+<tr>
+<td><label> Age </label> </td>
+<td><input type="number" name="age" max="60" min="18" required placeholder="Type Age" title="Age"> </td>
+</tr>
+
+<tr>
+<td><label> DOB </label> </td>
+<td><input type="date" name="DOB" required title="date"> </td>
+</tr>
+
+<tr>
+<td> <label> Gender </label> </td>
+<td><label> Male <input name="gender" type="radio" value="Male" checked></td> <td> Female <input name="gender" type="radio" value="Female"> </td><td> Others <input name="gender" type="radio" value="Other"> 
+</td>
+</tr>
+
+<tr>
+<td><label> Mobile No. </label> </td>
+<td
+<td><input type="text" name="phone" placeholder="Phone no." maxlength="10" required> </td>
+</tr>
+
+<tr>
+<td><label> E-mail </label> </td>
+<td><input type="email" name="user" placeholder="Type Name Id" title="Type email address.." required> </td>
+</tr>
+
+<tr>
+<td> Country </td>
+<td> <input list="mylist" name="mylist" required>
+<datalist id="mylist">
+<option> Afghanistan
+<option>Algeria
+<option>Argentina
+<option>Australia
+<option>Austria
+<option>Bangladesh
+<option>Barbados
+<option>Belarus
+<option>Belgium
+<option>Brazil
+<option>Bulgaria
+<option>Burma
+<option>Cambodia
+<option>Canada
+<option>China
+<option>Colombia
+<option>Cuba
+<option>Denmark
+<option>Dominica
+<option>Dominician
+<option>Egypt
+<option>Estonia
+<option>Ethiopia
+<option>Finland
+<option>France
+<option>Georgia
+<option>Germany
+<option>Greece
+<option>Guinea
+<option>Holy see
+<option>Hungary
+<option>Iceland
+<option>India
+<option>Indonesia
+<option>Iran
+<option>Iraq
+<option>Ireland
+<option>Israel
+<option>Italy
+<option>Japan
+<option>Jordan
+<option>Kenya
+<option>Korea
+<option>Kuwait
+<option>Latvia
+<option>Libya
+<option>Madagascar
+<option>Malaysia
+<option>Maldives
+<option>Mauritius
+<option>Mexico
+<option>Morocco
+<option>Nepal
+<option>Netherland
+<option>New Zealand
+<option>Nigeria
+<option>Norway
+<option>Oman
+<option>Pakistan
+<option>Peru
+<option>Philippines
+<option>Poland
+<option>Qatar
+<option>Romania
+<option>Russia
+<option>San Marino
+<option>Saudi Arabia
+<option>Serbia
+<option>Singapore
+<option>Slovakia
+<option>South Africa
+<option>Spain
+<option>Sri Lanka
+<option>Sweden
+<option>Switzerland
+<option>Tanzania
+<option>Thailand
+<option>Turkey
+<option>Uganda
+<option>Ukraine
+<option>United Kingdom
+<option>Uzbekistan
+<option>Vietnam
+<option>Yemen
+<option>Zimbabwe
+</datalist>
+</td>
+</tr>
+
+<tr>
+<td><label> State </label> </td>
+<td><select>
+<option> --Select-- </option>
+<option> Andhra Pradesh </option>
+<option> Arunachal Pradesh </option>
+<option> Assam </option>
+<option> Bihar </option>
+<option> Chattisgarh </option>
+<option> Goa </option>
+<option> Gujarat </option>
+<option> Haryana </option>
+<option> Himachal Pradesh </option>
+<option> Jharkhand </option>
+<option> Karnataka </option>
+<option> Kerala </option>
+<option> Madhya Pradesh </option>
+<option> Maharashtra </option>
+<option> Manipur </option>
+<option> Meghalaya </option>
+<option> Mizoram </option>
+<option> Nagaland </option>
+<option> Odisha </option>
+<option> Punjab </option>
+<option> Rajasthan </option>
+<option> Sikkim </option>
+<option> Tamil Nadu </option>
+<option> Telangana </option>
+<option> Tripura </option>
+<option> Uttar Pradesh </option>
+<option> Uttrakhand </option>
+<option> West Bengal </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label> Hobby </label> </td>
+<td>Reading<input type="checkbox" value="read"></td>
+<td>Learning<input type="checkbox" value="learn"></td>
+<td>Cooking<input type="checkbox" value="cook"></td>
+<td>Dancing<input type="checkbox" value="dance"></td>
+</td>
+</tr>
+
+<tr>
+<td><label> Message </label> </td>
+<td><textarea cols="20" rows="10" placeholder="Type message here"></textarea></td>
+</tr>
+
+<tr>
+<td>Color</td>
+<td><input type="color" onchange='document,bgcolor= this.value'></td>
+</tr>
+
+<tr>
+<td>Upload File</td>
+<td><input type="File"></td>
+</tr>
+
+<tr>
+<td><input type="reset"> </td>
+<td><input type="submit" value="Register"> </td>
+</tr>
+
+</table>
+</form>
+</div>
+</html>

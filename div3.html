@@ -1,0 +1,76 @@
+<!doctype html>
+<head><title>Div Tag</title>
+</head>
+<style>
+@keyframes ani1
+{
+from{transform:rotateY(360deg) rotateZ(60deg)}
+to{transform:rotateY(0deg) rotateZ(10deg)}
+}
+
+@keyframes ani2
+{
+from{transform:rotateY(360deg) rotateZ(60deg)}
+to{transform:rotateY(0deg) rotateZ(10deg)}
+}
+
+@keyframes myzoom
+{
+from{transform:perspective(400px);}
+to{transform:perspective(10px);}
+}
+
+#box{
+width:500px;
+height:400px;
+background:black;
+margin:auto;
+margin-top:100px;
+perspective:200px
+}
+
+#one{
+width:200px;
+height:250px;
+background:red;
+text-align:center;
+color:black;
+position:relative;
+left:150px;
+top:50px;
+//backface-visiblity:hidden;
+animation-fill-mode:forwards;
+animation:ani2 6s linear infinite;
+
+background-image:url(images/bg4.jpg);
+background-size:cover;
+}
+
+
+#two
+{
+width:200px;
+height:250px;
+background:yellow;
+text-align:center;
+color:black;
+position:relative;
+left:150px;
+top:-200px;
+//backface-visiblity:hidden;
+animation-fill-mode:forwards;
+animation:ani1 6s linear infinite;
+background-image:url(images/bg.jpg);
+background-size:cover;
+
+</style>
+<body>
+
+<div id="box">
+
+   <div id="one">One</div>
+   <div id="two">two</div>
+
+</div>
+</body>
+</html>

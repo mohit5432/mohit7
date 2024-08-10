@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<title>Animation2</title>
+</head>
+<h1 style="background-image: linear-gradient(black , cyan, MediumSpringGreen ); text-align:center;"><font color="DarkMagenta">Animation2</font></h1>
+
+
+
+
+<style>
+body  {
+  background-image: url("images/punk.jpg");
+  
+}
+  
+
+
+@keyframes ani3
+{
+to{transform:rotate(0deg) scale(1) skew(Odeg, 0deg);}
+from{transform:rotate(360deg) scale(1.5) skew(2deg, 0deg);}
+}
+
+@keyframes ani4
+{
+
+10%{background-image: repeating-conic-gradient(LightSalmon 15%, Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px cyan; 
+}
+
+20%{background-image: repeating-conic-gradient(LightSalmon 20%, Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%); 
+box-shadow:5px 5px 90px peach; 
+} 
+
+30%{background-image: repeating-conic-gradient(LightSalmon 25%, Coral 45%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px yellow;
+}
+
+40%{background-image: repeating-conic-gradient(LightSalmon 30%, Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px blue; 
+}
+
+50%{background-image: repeating-conic-gradient(LightSalmon 35%, Coral 55%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px red;  
+}
+
+60%{background-image: repeating-conic-gradient(LightSalmon 40%, Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange6 0%);
+box-shadow:5px 5px 90px purple;
+}
+
+70%{background-image: repeating-conic-gradient(LightSalmon 45%, Coral 65%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px gold; 
+}
+
+80%{background-image: repeating-conic-gradient(LightSalmon 50%, Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px lime;
+}
+
+90%{background-image: repeating-conic-gradient(LightSalmon 55%, Coral 75%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px indigo;
+}
+
+100%{background-image: repeating-conic-gradient(LightSalmon 15%,Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange 60%);
+box-shadow:5px 5px 90px yellow; 
+}
+
+
+}
+#main{
+width:200px;
+height:200px;
+backgroung-color:red;
+margin:auto;
+margin-top:10%;
+border-radius:150px;
+background-image:repeating-conic-gradient(LightSalmon 25%,Coral 35%, OrangeRed 35%, Tomato 30%, DarkOrange 55%, Orange60%);
+box-shadow:5px 5px 90px cyan;
+animation:ani4 1s linear infinite alternate, ani3 1s linear infinite alternate;
+
+}
+
+
+
+</style>
+
+<body bgcolor="black">
+<div id="main">
+
+</div>
+
+</body>
+</html>

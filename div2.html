@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Div Tag 2</title>
+<a name="top">
+<a href="practice work.html"><img src="images/back.jpg" width="2%" height="3%" align=left></a>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--
+RWD:= Responsive web design
+1. Fix your target (Consider break point)
+2. Write Meta Tag device....
+3. use media query or responsive gride(eg in bootstrap)
+
+-->
+
+</head>
+<style>
+/* Tag style */
+div{
+border:2px black solid;
+}
+body{marzin-top:0px;}
+#header
+{
+width:95%;
+margin:auto;
+height:300px;
+padding:10px;
+}
+
+#navbar
+{
+width:70%;
+height:20px;
+padding:10px;
+margin-left:2%;
+}
+
+#leftbar
+{
+width:10%;
+height:300px;
+padding:10px;
+margin:2px;
+float:left;
+background:#0872C2;
+}
+
+#middle
+{
+width:72%
+height:300px;
+padding:10px;
+margin:2px;
+float:left;
+background:yellow;
+}
+#rightbar
+
+{
+width:10%;
+height:300px;
+padding:10px;
+margin:auto;
+background:#07304F;
+float:right;
+}
+#footer
+{
+width:100%
+height:200px;
+padding:10px;
+color:white;
+background:black;
+clear:both;
+}
+
+/* Extra small devices(phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+{
+       #header{
+              background:yellow;
+              //display;none;
+              height:50px;
+
+               }
+
+           #leftbar{width:95%;}
+           #middle{width:95%;}
+           #rightbar{width:95%;}
+           #footer{height:50px;}
+
+
+
+}
+
+/* Small devices(portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+{
+
+}
+
+
+/*Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px)
+{  
+      #header
+      {
+      background:green;
+      height:200px;
+       }
+
+       #leftbar{width:20%;}
+       #middle{width:73%;}
+       #rightbar{width:95%;height:200px;}
+       #footer{height:50px;
+
+}
+
+/* Large devices (laptop/desktop,992px and up) */
+
+@media only screen and (min-width: 992px)
+{
+
+ #header {
+     
+     background:cyan;
+      height:300px;
+       }
+
+       #leftbar{width:10%;}
+       #middle{width:71%;}
+       #rightbar{width:10%;height:300px;}
+       #footer{height:200px;
+}
+
+/* Extra Large devices (large laptop/desktop,1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+
+
+           #header{
+           background:orange;
+           height:400px;
+            }
+         
+}
+
+</style>
+
+<body bgcolor="#9834F6">
+<div id="header"><b>Header</b></div>
+
+<div id="navbar"><b>Navigate bar</b></div>
+
+<div id="main">
+           <div id="leftbar"><b>Leftbar</div>
+           <div id="middle"><b>Middle Article</b></div>
+           <div id="rightbar"><b>Rightbar</b></div>
+
+</div>
+
+<div id="footer">Footer</div>
+
+
+ </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>Animation</title>
+<a name="top">
+<a href="practice work.html"><img src="images/back.jpg" width="2%" height="3%" align=left></a>
+<h1 style="text-align:center;"><font face="verdana " color="white"><u>ANIMATION</font></u></h1>
+</head>
+<style>
+
+
+
+
+@keyframes photos
+{
+10%{background-image:url(images/gif1.gif)}
+20%{background-image:url(images/gif2.gif)}
+30%{background-image:url(images/gif3.gif)}
+40%{background-image:url(images/gif4.gif)}
+50%{background-image:url(images/gif5.gif)}
+60%{background-image:url(images/gif6.gif)}
+70%{background-image:url(images/gif7.gif)}
+80%{background-image:url(images/gif8.gif)}
+90%{background-image:url(images/gif9.gif)}
+100%{background-image:url(images/gif10.gif)}
+}
+@keyframes textani
+{
+from{left:0px;}
+to{left:-2000px;}
+}
+
+#pic
+{
+width:80%;
+height:90%;
+background-image:url(images/p1.jpg);
+background-size:cover;
+
+border:20px orange groove;PX;
+margin:auto;
+overflow:hidden;
+animation:photos 30s infinite alternate;
+}
+
+#text
+{
+position:relative;
+color:white;
+font-size:30px;
+font-family:verdana;
+text-transform:capitalize;
+background:rgba(0,0,0,0.45);
+padding:15px;
+margin-top:500px;
+width:3000px;
+text-align:left;
+height:20px;
+left:0px;
+animation:textani 15s infinite linear alternate;
+}
+
+</style>
+
+<body style=" background:url(images/m2.jpg);">
+
+<div id="pic">
+
+<div id="text">
+In all things of nature there is something of the marvelous. Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating; there is really no such thing as bad weather. 
+</div>
+
+</div>
+</body>
+</html>
