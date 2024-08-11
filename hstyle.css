@@ -1,0 +1,358 @@
+    a:link {
+        color: Black;
+        text-decortion: none;
+    }
+    
+    a:visited {
+        color: Black;
+        text-decortion: none;
+    }
+    
+    @keyframes runbanner {
+        {
+            10% {
+                left: 0%;
+            }
+            20% {
+                left: 0%;
+            }
+            30% {
+                left: -19%;
+            }
+            40% {
+                left: -19%;
+            }
+            50% {
+                left: -38%;
+            }
+            60% {
+                left: -38%;
+            }
+            70% {
+                left: -57%;
+            }
+            80% {
+                left: -57%;
+            }
+        }
+    }
+    
+    #banner {
+        width: 100%;
+        height: 400px;
+        // background: #274e74;
+    }
+    
+    .pic {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        animation: runbanner 12s ease-in infinite alternate;
+    }
+    
+    #mask {
+        width: 100%;
+        height: 400px;
+        background: rgb(9, 70, 9);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+    
+    #main {
+        width: 100%;
+        height: 400px;
+        //background:cyan;
+    }
+    
+    #card {
+        width: 90%;
+        height: 800px;
+        margin: auto;
+        //background:green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        font-family: system-ui;
+    }
+    
+    #crd {
+        width: 37%;
+        height: 350px;
+        //background:orange;
+        box-shadow: 5px 5px 5px cyan;
+    }
+    
+    .crd:hover {
+        transition: 0.5s ease-in-out;
+        transform: scale(1.1);
+    }
+    
+    #dvimg {
+        width: 90%;
+        height: 270px;
+        background: rgb(204, 252, 117);
+        margin: auto;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .dvimg:hover {
+        transition: 0.5s ease-in-out;
+        transform: scale(1.1);
+    }
+    
+    .info {
+        //margin-left:-40px;
+        list-style: none;
+    }
+    
+    #text {
+        font-size: 20px;
+    }
+    
+    .sin a {
+        color: rgb(252, 252, 252);
+    }
+    
+    .sin {
+        width: 8vw;
+        height: 5vh;
+        background-color: #9d8ae2;
+        text-align: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12vw;
+        box-shadow: 3px 3px 10px rgb(102, 73, 73);
+        margin-bottom: 2%;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    
+    @media only screen and (max-width: 600px) {
+        body {
+            background: white;
+        }
+        #card {
+            width: 80%;
+            height: 1350px;
+            margin: auto;
+            //background:green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #crd {
+            width: 47%;
+            height: 250px;
+            background: rgb(148, 235, 131);
+            box-shadow: 5px 5px 5px rgb(187, 248, 171);
+        }
+        #dvimg {
+            width: 90%;
+            height: 170px;
+            margin: auto;
+            margin-top: 5px;
+            background-color: rgb(238, 235, 89);
+        }
+        #text {
+            font-size: 17px;
+            text-align: center;
+        }
+        .info {
+            list-style: none;
+        }
+        .nav__logo {
+            display: flex;
+            width: 5%;
+            height: 25px;
+            margin-bottom: 2%;
+        }
+        #mask {
+            width: 100%;
+            height: 200px;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    
+    @media only screen and (min-width: 600px) {
+        body {
+            background: rgb(88, 26, 26);
+            /*background-image: url(banner.jpg);*/
+        }
+        #card {
+            width: 80%;
+            height: 1630px;
+            margin: auto;
+            //background:green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            font-family: system-ui;
+        }
+        #crd {
+            width: 47%;
+            height: 330px;
+            background: rgb(140, 185, 245);
+            box-shadow: 5px 5px 5px grey;
+        }
+        #dvimg {
+            width: 90%;
+            height: 220px;
+            margin: auto;
+            margin-top: 8px;
+            background-color: peachpuff;
+        }
+        #text {
+            font-size: 20px;
+            text-align: center;
+        }
+        .info {
+            list-style: none;
+        }
+        .nav__logo {
+            display: flex;
+            width: 5%;
+            height: 30px;
+            margin-bottom: 2%;
+        }
+        #mask {
+            width: 100%;
+            height: 300px;
+        }
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    
+    @media only screen and (min-width: 768px) {
+        body {
+            background: white;
+        }
+        #card {
+            width: 80%;
+            height: 1950px;
+            margin: auto;
+            //background:green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #crd {
+            width: 48%;
+            height: 370px;
+            background: rgb(200, 245, 247);
+            box-shadow: 5px 5px 5px rgb(241, 171, 238);
+        }
+        #dvimg {
+            width: 90%;
+            height: 270px;
+            margin: auto;
+            margin-top: 8px;
+            background-color: rgb(21, 54, 43);
+        }
+        #text {
+            font-size: 28px;
+            text-align: right;
+        }
+        .info {
+            list-style: none;
+        }
+        .nav__logo {
+            display: flex;
+            width: 5%;
+            height: 35px;
+            margin-bottom: 2%;
+        }
+        #mask {
+            width: 70%;
+            height: 300px;
+        }
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    
+    @media only screen and (min-width: 992px) {
+        body {
+            background: white;
+        }
+        #card {
+            width: 90%;
+            height: 520px;
+            margin: auto;
+            //background:green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #crd {
+            width: 39%;
+            height: 250px;
+            background: rgb(253, 232, 250);
+            box-shadow: 5px 5px 5px rgb(165, 245, 255);
+        }
+        #dvimg {
+            width: 90%;
+            height: 180px;
+            margin: auto;
+            margin-top: 8px;
+            background-color: rgb(186, 133, 235);
+        }
+        #text {
+            font-size: 20px;
+            text-align: right;
+        }
+        .info {
+            list-style: none;
+        }
+        .nav__logo {
+            display: flex;
+            width: 5%;
+            height: 40px;
+            margin-bottom: 2%;
+        }
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    
+    @media only screen and (min-width: 1200px) {
+        body {
+            background: white;
+        }
+        #card {
+            width: 80%;
+            height: 800px;
+            margin: auto;
+            //background:green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #crd {
+            width: 17%;
+            height: 350px;
+            //background:orange;
+        }
+        #dvimg {
+            width: 90%;
+            height: 250px;
+            margin-top: 10px;
+            background-color: rgb(250, 194, 213);
+        }
+        #text {
+            font-size: 23px;
+            text-align: right;
+        }
+        .info {
+            list-style: none;
+        }
+        .nav__logo {
+            display: flex;
+            width: 5%;
+            height: 45px;
+            margin-bottom: 2%;
+        }
+        #mask {
+            width: 100%;
+            height: 400px;
+        }
+    }
