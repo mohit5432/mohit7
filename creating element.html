@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<a name="top">
+<a href="practice2.html"><img src="images2/back.jpg" width="2%" height="3%" align=left title="back"></a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="teal">
+    <script>
+        /*Creating Tag By JS */
+        var m
+        var mypic = document.createElement("img")
+        document.body.appendChild(mypic)
+        mypic.src = "images2/bird.jpg"
+        mypic.style = "transition:0.80;margin:50px;border-radius:30px;cursor:pointer;"
+        mypic.style.width = "30%"
+        mypic.style.boxshadow = "10px 10px 10px grey"
+        mypic.onclick = function() {
+            mypic.style.transform = "scale(1.50) rotate(360deg)"
+        }
+        mypic.onmouseout = function() {
+            mypic.style.transform = "scale(1)"
+            mypic.style.borderRadius = "0px"
+            document.body.removeChild(m)
+        }
+
+        mypic.onmouseover = function() {
+            mypic.style.borderRadius = "150px"
+            mypic.style.height = "350px"
+            m = document.createElement("div")
+            document.body.appendChild(m)
+            m.style = "color:white;border-radius:20px;text-align:center;font-size:40px;position:absolute;background:black;top:440;left:100px;width:200px;height:50px;boxshadow:10px 10px 10px grey"
+            m.innerHTML = "Bird Pic"
+        }
+
+        document.title = "bird"
+    </script>
+</body>
+
+</html>

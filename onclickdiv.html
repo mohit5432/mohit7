@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;"><u>ON CLICK DIV.</u></h1>
+
+    <script>
+        window.document.bgColor = "lavender"
+        var t = document.createElement("p")
+        document.body.appendChild(t)
+
+        t.innerHTML = "<h2> About </h2> JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+
+        t.style = "transition:1.70s; box-shadow:10px 10px 10px grey; text-align:justify;"
+        t.style.color = "white"
+        t.style.height = "70px"
+        t.style.background = "indigo"
+        t.style.cursor = "pointer"
+        t.style.padding = "10px"
+        t.style.fontSize = "20px"
+        t.style.overflow = "hidden"
+
+        var fsize = 20
+
+        t.onclick = function() {
+            t.style.height = "300px"
+        }
+
+        t.onmouseleave = function() {
+
+            t.style.height = "100px"
+        }
+
+        t.onwheel = function(event) {
+            if (event.deltaY == 100) {
+                fsize++
+                t.style.fontSize = fsize + "px"
+                t.style.overflow = "scroll"
+            }
+
+            if (event.deltaY == -100) {
+                fsize--
+                t.style.fontSize = "16px"
+            }
+        }
+    </script>
+
+</html>

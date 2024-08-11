@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic {
+        width: 80%;
+        height: 600px;
+        display: block;
+        position: absolute;
+        left: 150px;
+        top: 100px;
+        transition: 2s;
+        box-shadow: 10px 10px 10px gray;
+    }
+</style>
+
+<body onLoad="show()">
+    <h1 style="background-color:rgb(146, 145, 233);">NATURE</h1>
+    <div id="banner">
+        <img id="p1" src="images2/p1 (1).jpg" class="pic">
+        <img id="p2" src="images2/p2 (2).jpg" class="pic">
+        <img id="p3" src="images2/p3 (3).jpg" class="pic">
+        <img id="p4" src="images2/p4 (4).jpg" class="pic">
+        <img id="p5" src="images2/p5 (5).jpg" class="pic">
+        <img id="p6" src="images2/p6 (6).jpg" class="pic">
+        <img id="p7" src="images2/p7 (7).jpg" class="pic">
+        <img id="p8" src="images2/p8 (8).jpg" class="pic">
+
+    </div>
+
+    <script>
+        document.body.style.backgroundImage = "url('images2/javabn2bg.gif')";
+        var d = document.getElementById("mypic")
+        c = 0
+        var p1 = document.getElementById("p1")
+        var p2 = document.getElementById("p2")
+        var p3 = document.getElementById("p3")
+        var p4 = document.getElementById("p4")
+        var p5 = document.getElementById("p5")
+        var p6 = document.getElementById("p6")
+        var p7 = document.getElementById("p7")
+        var p8 = document.getElementById("p8")
+
+        var s
+
+        function show() {
+
+            switch (c) {
+                case 1:
+                    p8.style.opacity = "0"
+                    p8.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 2:
+                    p7.style.opacity = "0"
+                    p7.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 3:
+                    p6.style.opacity = "0"
+                    p6.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 4:
+                    p5.style.opacity = "0"
+                    p5.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 5:
+                    p4.style.opacity = "0"
+                    p4.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 6:
+                    p3.style.opacity = "0"
+                    p3.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 7:
+                    p2.style.opacity = "0"
+                    p2.style.transform = "scale(0) rotate(360deg)"
+                    break;
+
+                case 8:
+                    p1.style.opacity = "1";
+                    p2.style.opacity = "1";
+                    p3.style.opacity = "1";
+                    p4.style.opacity = "1";
+                    p5.style.opacity = "1";
+                    p6.style.opacity = "1";
+                    p7.style.opacity = "1";
+                    p8.style.opacity = "1";
+
+                    p8.style.transform = "scale(1) rotate (0deg)"
+                    p7.style.transform = "scale(1) rotate (0deg)"
+                    p6.style.transform = "scale(1) rotate (0deg)"
+                    p5.style.transform = "scale(1) rotate (0deg)"
+                    p4.style.transform = "scale(1) rotate (0deg)"
+                    p3.style.transform = "scale(1) rotate (0deg)"
+                    p2.style.transform = "scale(1) rotate (0deg)"
+
+                    break;
+
+                default:
+
+
+            }
+            if (c <= 8) {
+                c++
+            } else {
+                c = 0
+            }
+            document.title = c
+
+
+
+            s = setTimeout("show()", 2000)
+
+        }

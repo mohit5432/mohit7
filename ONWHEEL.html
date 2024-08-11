@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic {
+        width: 900px;
+        height: 700px;
+        box-shadow: 10px 10px 10px rgb(67, 21, 2);
+        cursor: zoom-in;
+        display: block;
+        margin: auto;
+        transition: 0.50s;
+    }
+    
+    #myslider {
+        position: relative;
+        top: 400px;
+        left: 160px;
+    }
+    
+    body {
+        background-image: url(images2/white bg.jpg);
+    }
+    
+    h1 {
+        font-family: Sans-serif;
+    }
+</style>
+
+<body>
+
+    <hr size="2px" color="red" />
+    <h1 style="text-align: center;"><span style="color:rgb(19, 58, 51)">ON</span>WHEEL</h1>
+    <hr size="2px" color="red" />
+    <div id="box" style="margin:auto;width:60%;height:400px;border:0px black solid;">
+
+        <script>
+            var b = document.getElementById("box")
+
+            var p = document.createElement("img")
+
+            b.appendChild(p)
+            p.src = "images2/map1.jpeg"
+            p.style.width = "100px"
+            p.style.height = "100px"
+            p.classList.add("pic")
+            document.title = "no error"
+
+            var w = 100
+            p.onwheel = function(event) {
+                // alert(event.deltaY)
+                if ((event.deltaY == 200) && (w < 550)) {
+                    w = w + 5
+                    document.title = w
+                    p.style.width = w + "px"
+                    p.style.height = w + "px"
+                }
+
+
+                if ((event.deltaY == -200) && (w > 100)) {
+                    w = w - 5
+                    document.title = w
+                    p.style.width = w + "px"
+                    p.style.height = w + "px"
+
+                }
+            }
+        </script>
+    </div>
+
+</html>

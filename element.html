@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        box-shadow: 10px 10px 10px grey;
+        cursor: pointer;
+    }
+    
+    .mystyle {
+        margin: 60px;
+        transition: 1.50;
+        transform: scale(2) rotateY(180deg);
+    }
+</style>
+
+<body>
+    <img id="mypic" src="images/a1 (1).jpg" class="pic">
+    <script>
+        var p = document.getElementById("mypic")
+        var n = 1
+        p.onclick = function() {
+            if (n < 8) {
+                n++
+            } else {
+                n = 1
+            }
+            document.title = n
+            p.src = "images/a1 (" + n + ").jpg"
+            p.classList.add("mystyle")
+        }
+
+        p.onmousemove = function() {
+            p.classList.remove("mystyle")
+        }
+        document.title = "No Error"
+    </script>
+
+</body>
+
+</html>

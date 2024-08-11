@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<a name="top">
+<a href="practice2.html"><img src="images2/back.jpg" width="2%" height="3%" align=left title="back"></a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<br/>
+<br/>
+    <input type="color" onchange="myaction(this)">
+    
+    <script>
+    
+    /*
+    JS Use DOM
+    */
+    
+    window.document.bgColor="cyan"
+    document.write("<H1 style='font-size:30px;color: red'>WELCOME TO JAVASCRIPT</H1>")
+    document.fgColor="blue"
+    document.write("Hello World")
+    // alert("Welcome")
+    // syntax
+    //var uname= prompt("enter your name","undefind")
+    //alert(uname)
+    //document.write("<br/>hello"+uname)
+    //var mycolor = prompt("enter background color to set...?","orange")
+    //document.bgColor
+    document.title="Javascript"
+    function myaction(c)
+    {
+        document.body.style.backgroundColor = c.value
+    }
+    </script>
+</body>
+</html>

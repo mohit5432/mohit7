@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic {
+        width: 500px;
+        height: 300px;
+        box-shadow: 10px 10px 10px rgb(67, 21, 2);
+        cursor: zoom-in;
+        display: block;
+        margin: auto;
+        transition: 0.50s;
+    }
+    
+    #myslider {
+        position: relative;
+        margin: auto;
+        top: 200px;
+        left: 200px;
+        width: 10%;
+        box-shadow: 8px 8px 10px rgb(0, 0, 0);
+        border-radius: 80%;
+        background-color: aqua;
+    }
+    
+    body {
+        background-image: url(images2/bg10.png );
+    }
+    
+    h1 {
+        font-family: Sans-serif;
+    }
+</style>
+
+<body>
+    <hr size="3px" color="orange" />
+    <h1 style="text-align: center;"><span style="color:blue">Sli</span>der</h1>
+    <hr size="3px" color="orange" />
+    <div id="box" style=" margin:auto;width:100%;height:100%;border:0px rgb(63, 58, 131) solid;">
+        <input id="myslider" type="range" max="550" min="300" value="300">
+
+        <script>
+            var b = document.getElementById("box")
+            var s = document.getElementById("myslider")
+            var p = document.createElement("img")
+
+            b.appendChild(p)
+            p.src = "images2/CARRY6.gif"
+            p.classList.add("pic")
+            document.title = "on wheel"
+
+            s.onchange = function() {
+                p.style.width = this.value + "px"
+                p.style.height = this.value + "px"
+                document.title = this.value
+            }
+        </script>
+
+</html>
